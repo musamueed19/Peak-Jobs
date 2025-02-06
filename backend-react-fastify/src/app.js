@@ -6,7 +6,7 @@ function build(opts = {}) {
   const app = fastify(opts);
 
   app.get("/", (request, reply) => {
-    reply.send({ hello: "world!" });
+    reply.code(200).send({ hello: "world!" });
   });
   return app;
 }
