@@ -2,6 +2,7 @@
   "name": "backend-react-fastify",
   "version": "1.0.0",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon server.js | pino-pretty",
     "test": "jest",
@@ -10,11 +11,11 @@
     "format": "prettier --write **/*.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Muhammad Musa Mueed",
+  "license": "MIT",
+  "description": "Job Peek - your best start to end job finder partner",
   "dependencies": {
-    "fastify": "^5.2.1",
+    "fastify": "^5.4.0",
     "nodemon": "^3.1.9"
   },
   "devDependencies": {
