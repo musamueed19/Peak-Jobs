@@ -14,10 +14,16 @@ const server = fastifyApp({
   },
 });
 
+
+
+// fastify server app
+
+// contains like "server.log"
+
 const start = async () => {
   try {
     await server.listen({ port: PORT, host: HOST }); // Pass an object
-    console.log(`🚀 SERVER RUNNING -  http://localhost:${PORT}`);
+    server.log.info(`🚀 SERVER RUNNING -  http://localhost:${PORT}`);
   } catch (error) {
     server.log.error(`SERVER CRASHED - http://localhost:${PORT}\n${error}`);
     process.exit(1);
